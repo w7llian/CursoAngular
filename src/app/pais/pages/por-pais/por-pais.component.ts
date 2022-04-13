@@ -19,7 +19,8 @@ export class PorPaisComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  buscar(){
+  buscar( termino: string ){
+    this.termino = termino;
     console.log( this.termino );
     this.hayError = false;
 
